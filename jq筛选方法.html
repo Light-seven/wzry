@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script src="jquery.min.js">
+    </script>
+    <script>
+        $(function(){
+          $("ol .item").siblings("li").css("color","red");
+          $("ul li").eq(2).css("color","blue");
+          $("button").click(function(){
+              $(this).css("background","red").siblings("button").css("background","");
+             // $(this).siblings("button").css("background","");
+          })
+      });
+  </script>
+</head>
+<body>
+    
+    <ol>
+        <li> 千里黄云白日曛，北风吹雁雪纷纷。</li>
+        <li>莫愁前路无知己，天下谁人不识君。</li>
+        <li class="item">六翮飘飖私自怜，一离京洛十余年。</li>
+        <li>丈夫贫贱应未足，今日相逢无酒钱。</li>
+    </ol>
+  
+    <ul>
+        <li>大鹏一日同风起，扶摇直上九万里。</li>
+        <li>假令风歇时下来，犹能簸却沧溟水。</li>
+        <li>世人见我恒殊调，闻余大言皆冷笑。</li>
+        <li>宣父犹能畏后生，丈夫未可轻年少。</li>
+    </ul>
+    <div>
+        
+        <button>孤藤</button>
+        <button>老树</button>
+        <button>昏鸦</button>
+        <button>小桥</button>
+        <button>流水</button>
+        <button>人家</button>
+    </div>
+    
+</body>
+</html>
